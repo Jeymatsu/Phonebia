@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Phonebia</string>
+    <string name="Sleep">Want to sleep but your Phone is Preventing you from doing so?!</string>
+    <string name="focus">Want to focus on your life by taking a rest from social media </string>
+    <string name="sleppmode"> Get Ready for bed, this will block some apps,reduce screen brightness and also mute all sounds. Goodnight and sleep tight</string>
+    <string name="studymode">Studying always feels impossible until its done(Phonebia).This Mode will Push you to study by locking some apps and muting sounds</string>
+    <string name="focusmode"> Its Time to focus. Its only after you have stepped outside your comfort zone that you begin to change, grow, and transform.This will lock
+    lock some apps and mute sounds</string>
+</resources>

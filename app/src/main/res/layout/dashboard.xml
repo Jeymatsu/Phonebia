@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dashboard"
+    android:background="@color/spotifyblack">
+
+
+    <RelativeLayout
+        android:id="@+id/rel2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:elevation="6dp"
+        android:background="@drawable/relativetitle">
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PHONEBIA"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="20sp"
+            android:layout_centerInParent="true">
+
+        </TextView>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/search"
+        android:elevation="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/search"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@+id/rel2">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search..."
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="7dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="11dp"
+            android:foregroundGravity="center"
+            android:src="@mipmap/search">
+
+
+        </ImageView>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginRight="50dp"
+        android:id="@+id/l1"
+        android:layout_marginLeft="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search"
+        android:layout_marginTop="30dp"
+        >
+        <RelativeLayout
+            android:onClick="OpenStudyModule"
+            android:layout_marginRight="10dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/buttons"
+            android:backgroundTint="@color/blue">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/study2"
+                android:layout_centerInParent="true"></ImageView>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="114dp"
+            android:onClick="OpenSleepModule"
+            android:layout_height="120dp"
+            android:layout_marginLeft="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/buttons"
+            android:backgroundTint="@color/blue">
+            <ImageView
+                android:onClick="OpenSleepModule"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/sleep2"
+                android:layout_centerInParent="true"></ImageView>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rltext"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_below="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp">
+        <TextView
+            android:layout_marginLeft="40dp"
+            android:id="@+id/txtStudy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Study"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_medium"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="56dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Sleep"
+            android:textColor="@color/white"
+            android:textSize="15sp"></TextView>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/l2"
+        android:layout_width="match_parent"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@id/rltext"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+
+        <RelativeLayout
+            android:onClick="OpenFocusModule"
+            android:layout_marginRight="10dp"
+            android:layout_width="120dp"
+            android:layout_alignParentRight="true"
+            android:layout_height="120dp"
+            android:background="@drawable/buttons"
+            android:backgroundTint="@color/blue">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/focus2"
+                android:layout_centerInParent="true"></ImageView>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="114dp"
+            android:layout_height="120dp"
+            android:onClick="OpenWorkModule"
+
+
+            android:layout_marginRight="10dp"
+            android:background="@drawable/buttons"
+            android:backgroundTint="@color/blue">
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/work2"
+                android:layout_centerInParent="true"></ImageView>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rltext2"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_below="@+id/l2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp">
+        <TextView
+            android:layout_marginLeft="40dp"
+            android:id="@+id/txtwork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Work"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_medium"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="56dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Focus"
+            android:textColor="@color/white"
+            android:textSize="15sp"></TextView>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thank you for choosing Phonebia!!"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true">
+
+        </TextView>
+
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_below="@id/rltext2"
+        android:layout_marginTop="70dp"
+       >
+
+        <ImageView
+            android:layout_width="38dp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/instagramblue">
+
+        </ImageView>
+        <ImageView
+            android:layout_width="38dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/twitterblue">
+
+        </ImageView>
+        <ImageView
+            android:layout_width="38dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/facebookblue">
+
+        </ImageView>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

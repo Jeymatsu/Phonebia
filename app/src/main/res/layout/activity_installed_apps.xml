@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/spotifyblack"
+    android:orientation="vertical"
+    tools:context=".installedApps">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/header"
+        android:background="@drawable/rel2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="APP LOCK"
+            android:fontFamily="@font/poppins_medium"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"></TextView>
+
+
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_below="@+id/header"
+        android:orientation="horizontal"
+        android:id="@+id/layout_permission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_baseline_sentiment_dissatisfied_24"></ImageView>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="20sp"
+                android:text="Set Permission"></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:text="access to action usage settings to enable applock"></TextView>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:onClick="setPermission"
+                android:textColor="@color/blue"
+                android:background="@drawable/btn_usage"
+
+                android:text="Enable"></Button>
+
+
+
+
+
+        </LinearLayout>
+        
+        
+    </LinearLayout>
+
+    
+   <androidx.recyclerview.widget.RecyclerView
+       android:layout_marginTop="5dp"
+       android:layout_below="@+id/layout_permission"
+       android:id="@+id/app_list"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+   </androidx.recyclerview.widget.RecyclerView>
+    
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:id="@+id/btn_ok"
+        android:backgroundTint="@color/blue"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="16dp"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+</RelativeLayout>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".focusmodule"
+    android:background="@color/spotifyblack">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rel1">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/back_arrow"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerVertical="true">
+
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Focus"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"></TextView>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rel2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:layout_below="@+id/rel1"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/sleep_module_relative"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="20dp"
+        android:elevation="30dp">
+        <TextView
+            android:id="@+id/hello"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello Lad"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"></TextView>
+        <TextView
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/hello"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/focusmode"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"></TextView>
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/schedule"
+        android:layout_below="@id/rel2"
+        android:layout_marginTop="30dp"
+        android:text="Set Schedule"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppins_medium"
+        android:elevation="10dp"></TextView>
+    <RelativeLayout
+        android:id="@+id/relschedule"
+        android:onClick="openTimeDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/schedule"
+        android:background="@drawable/sleep_module_relative"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:elevation="30dp"
+        android:padding="10dp"
+        tools:ignore="OnClick">
+        <ImageView
+            android:id="@+id/imageclock"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/time"></ImageView>
+
+        <EditText
+            android:layout_centerHorizontal="true"
+            android:id="@+id/edit_text_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imageclock"
+            android:layout_toLeftOf="@+id/button_set"
+            android:hint="Minutes"
+            android:inputType="number"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+
+            android:textColor="@color/black">
+
+        </EditText>
+        <Button
+            android:id="@+id/button_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="SET"
+            android:fontFamily="@font/poppins_medium"
+            android:background="@drawable/buttons"></Button>
+
+        <TextView
+            android:id="@+id/text_view_countdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="00:00"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_below="@+id/edit_text_input"
+            android:textColor="@android:color/black"
+            android:textSize="60sp"></TextView>
+
+    </RelativeLayout>
+
+
+
+    <Button
+        android:onClick="OpenApplock"
+        android:id="@+id/btnSetApplock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/btnStart"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="81dp"
+        android:layout_marginBottom="55dp"
+        android:background="@drawable/buttons"
+        android:fontFamily="@font/poppins_medium"
+        android:text="App lock"
+        tools:ignore="OnClick">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="82dp"
+        android:layout_marginBottom="57dp"
+        android:background="@drawable/buttons"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Start">
+
+    </Button>
+
+
+
+
+
+
+
+</RelativeLayout>
